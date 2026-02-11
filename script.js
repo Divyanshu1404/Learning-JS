@@ -16,7 +16,7 @@
 //  b=70
 //  console.log(a+b);
 
-//Temporal DEAD zone   
+// Temporal DEAD zone   
 // console.log(a);
 // let 0;
 
@@ -29,9 +29,40 @@
 //  let a=5;
 
 
-let a=50;
-{
-    let a=67;
-    console.log("inside: ",a);
+// let a=50;
+// {
+//     let a=67;
+//     console.log("inside: ",a);
+// }
+// console.log("outside: ",a);
+
+
+// let a="5"+4;
+// console.log(a);
+
+
+// let b="5"-4;
+// console.log(b);
+
+
+// 5=="5";
+// 5==="5";
+
+
+// bingInt
+//   let a =9007199254740991n;
+//   a+3n; 
+
+
+// let a=[1,2,3,4,5];
+// let b=a;
+// b.pop();
+
+
+let a={
+    name:"aman",
 }
-console.log("outside: ",a);
+let b=a;4
+
+b.name="jai";
+  b
