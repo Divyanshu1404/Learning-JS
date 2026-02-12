@@ -46,6 +46,12 @@ nav a:hover {
     text-align: center;
     color: white;
     padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('img/pic.jpg') center/cover no-repeat;
+}
+
+.hero > div {
+    max-width: 900px;
+    padding: 20px;
 }
 
 .hero h2 {
