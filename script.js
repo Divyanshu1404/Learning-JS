@@ -255,10 +255,64 @@
 // }
 
 
-let num=987654;
-let count =0;
-while (num > 0){
-    num=Math.floor(num/10);
-    count++;
+// let num=987654;
+// let count =0;
+// while (num > 0){
+//     num=Math.floor(num/10);
+//     count++;
+// }
+// console.log(count);
+
+
+
+/// function
+
+// function num(){
+
+//         console.log("tgulijhfgv");
+
+// }
+// num() 
+
+// function sum(a,b){
+//     return a+b;
+// }
+// console.log(sum(4,6));
+
+
+// function abcd(v){
+//     return 12+v;
+// }
+// let val=abcd(23);
+// console.log(val);
+
+
+// function abcd(val){
+//     val();
+// }
+// abcd(function(){
+//     console.log("hello");
+// });  
+
+
+// function abc(){
+//     let a=12;
+//     function bcd(){
+//         let b=34;
+//         function cde(){
+//             let c=34;
+//             return a+b+c;
+//     }
+//     return cde();
+// }
+// return bcd();
+// }
+// console.log(abc());
+
+
+function abc(val){
+    val();
 }
-console.log(count);
+abcd(function(){
+    console.log("hello");
+});
