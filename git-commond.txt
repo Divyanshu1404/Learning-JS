@@ -1,0 +1,8 @@
+git status
+clear
+git add .
+git commit -m "message"
+re
+ls
+git restore filename
+
