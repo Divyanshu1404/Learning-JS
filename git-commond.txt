@@ -10,4 +10,7 @@ git push origin main/master
 git pull origin main/master
 mkdir git -demo-new
 git clone 
+git branch
+ git checkout -B dev
+ 
 
