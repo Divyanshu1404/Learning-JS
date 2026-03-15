@@ -317,4 +317,11 @@
 //     console.log("hello");
 // });
 
-console.log("nofnfff");
+// console.log("nofnfff");
+
+function abc(val){
+    val();
+}
+ abc(function(){
+    console.log("hello");
+});
