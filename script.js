@@ -319,9 +319,36 @@
 
 // console.log("nofnfff");
 
-function abc(val){
-    val();
+
+// high order function
+
+// function abc(val){
+//     val();
+// }
+//  abc(function(){
+//     console.log("hello");
+// });
+
+
+//pure funciton 
+//a function is pure if it always returns the same output for the same input and has no side effects (does not modify any external state).'
+
+// function addToTotal(num){
+//     let newtotal=total;
+//     newtotal +=num;
+// }
+
+//Closure   
+// a fiunciton that return another function is called closure
+
+function outer(){
+    let count=0;
+    return function(){
+        count++;
+        console.log(count);
+    };
 }
- abc(function(){
-    console.log("hello");
-});
+
+const counter = outer();
+counter();
+counter();
