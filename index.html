@@ -1,115 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>My Portfolio | Divyanshu Mishra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <script src="script.js" ></script>
-    <!-- Header -->
+
     <header>
-        <h1>Divyanshu</h1>
-        <nav>
-            <a href="#">Home</a>
+        <div class="brand">
+            <span class="logo">D</span>
+            <span class="name">Divyanshu</span>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="resume.html">Resume</a>
             <a href="#contact">Contact</a>
+            <a href="resume.html">Resume</a>
         </nav>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <div>
-            <script>
-                alert("Welcome to my Portfolio! Explore my projects and skills to know more about me.");
-            </script>
-            <h2>Hi, I'm Divyanshu Mishra</h2>
-            <p><B>Web Developer</B> | <B>Cloud Learner</B> | <B>Tech Enthusiast</p>
-            <a href="mailto:mishraaman4512@gmail.com" class="btn">Hire Me</a>
-        </div>
-    </div>
+    <aside class="social-sidebar" aria-label="Follow me">
+        <a href="https://www.linkedin.com/in/divyanshumishra14/" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://github.com/Divyanshu1404" target="_blank" rel="noopener noreferrer">gh</a>
+        <a href="https://www.instagram.com/aman_1404_/" target="_blank" rel="noopener noreferrer">ig</a>
+    </aside>
 
-    <!-- About Section -->
-    <section>
-        <h2>About</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript, Responsive Design</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-intro">Welcome to my portfolio</span>
+            <h1>Hello, my name’s <strong>Divyanshu</strong></h1>
+            <p class="hero-tag">I’m a web developer and cloud learner building modern interfaces and seamless user experiences.</p>
+            <div class="hero-actions">
+                <a href="resume.html" class="btn btn-primary">Download CV</a>
+                <a href="#projects" class="btn btn-outline">See my work</a>
             </div>
+            <span class="hero-status">Web Developer | Cloud Enthusiast</span>
+        </div>
 
-            <div class="card">
+        <div class="hero-photo">
+            <div class="photo-container">
+                <img src="img/profile.jpg" alt="Divyanshu Mishra" onerror="this.src='https://via.placeholder.com/460.png?text=Profile'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-light">
+        <h2>About</h2>
+        <p class="section-subtext">I build responsive, accessible web apps and learn cloud infrastructure daily to deliver production-ready solutions.</p>
+        <div class="cards">
+            <article class="card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, Responsive Design, React</p>
+            </article>
+            <article class="card">
                 <h3>Cloud Computing</h3>
                 <p>IBM Cloud, Docker, Virtualization, Linux</p>
-            </div>
-
-            <div class="card">
+            </article>
+            <article class="card">
                 <h3>Projects</h3>
-                <p>Portfolio, Web Apps, Automation Tools</p>
-            </div>
+                <p>Portfolio, web apps, automation tools, backend integration</p>
+            </article>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="section section-dark">
         <h2>Projects</h2>
-
         <div class="cards">
-            <div class="card">
+            <article class="card">
                 <h3>Truvall</h3>
-                <p>A comprehensive project showcasing modern web development practices and technologies.</p>
-                <a href="https://github.com/Divyanshu1404/travelo.git" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-
-            <div class="card">
+                <p>Modern web development demo with real-world responsive patterns.</p>
+                <a href="https://github.com/Divyanshu1404/travelo.git" target="_blank" rel="noopener noreferrer" class="link-btn">View Project</a>
+            </article>
+            <article class="card">
                 <h3>Exam Quest</h3>
-                <p>An interactive quiz application built with JavaScript for testing and learning purposes.</p>
-                <a href="https://github.com/Divyanshu1404/Examly.git" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-
-            <div class="card">
+                <p>Interactive JS quiz app built for learning and testing.</p>
+                <a href="https://github.com/Divyanshu1404/Examly.git" target="_blank" rel="noopener noreferrer" class="link-btn">View Project</a>
+            </article>
+            <article class="card">
                 <h3>Employee Management System</h3>
-                <p>A full-stack application for managing employee records, attendance, and payroll operations.</p>
-                <a href="#" class="btn">View Project</a>
-            </div>
+                <p>Full-stack project for employee and payroll record management.</p>
+                <a href="#" class="link-btn">View Project</a>
+            </article>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section section-light">
         <h2>Contact</h2>
-
         <div class="cards">
-            <div class="card">
+            <article class="card">
                 <h3>Email</h3>
-                <p><a href="mailto:mishraaman4512@gmail.com">mishraaman4512@gmail.com</a></p>
-            </div>
-
-            <div class="card">
+                <a href="mailto:mishraaman4512@gmail.com">mishraaman4512@gmail.com</a>
+            </article>
+            <article class="card">
                 <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/divyanshumishra14/" target="_blank" rel="noopener noreferrer">linkedin.com/in/divyanshumishra14</a></p>
-            </div>
-
-            <div class="card">
+                <a href="https://www.linkedin.com/in/divyanshumishra14/" target="_blank" rel="noopener noreferrer">linkedin.com/in/divyanshumishra14</a>
+            </article>
+            <article class="card">
                 <h3>Instagram</h3>
-                <p><a href="https://www.instagram.com/aman_1404_" target="_blank" rel="noopener noreferrer">@aman_1404_</a></p>
-            </div>
+                <a href="https://www.instagram.com/aman_1404_/" target="_blank" rel="noopener noreferrer">@aman_1404_</a>
+            </article>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2026 Divyanshu Mishra | All Rights Reserved</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
